@@ -1,0 +1,108 @@
+body {
+  margin : 0
+  /* background: red */
+}
+/* navbar HTML
+    <div class="nav">
+      <ul>
+        <li>Home</li>
+        <li>About Me</li>
+        <li>Work</li>
+        <li>Contact Me</li>
+      </ul>
+    </div> */
+.nav ul{
+  margin : 0;
+  background: black;
+  color:white;
+  text-align: right;
+}
+.nav ul li{
+  display: inline-block;
+  padding: 40px 20px;
+  letter-spacing: 3px;
+  font-size: 150%;
+  font-family: fantasy;
+}
+.nav ul li:hover{
+  color : yellow;
+  border: 2px solid white;
+}
+.active {
+  color : white;
+  text-decoration: underline;
+}
+
+/* hero-image styling
+    <div id="hero-image">
+      <h1>MY RESUME</h1>
+    </div> */
+
+#hero-image {
+  height: 100vh;
+  background-image: url("../images/computer-dog.jpg");
+  /* background-image: url("../images/lorex.jpeg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  padding-top: 50px;
+}
+#hero-image h1 {
+  margin : 0;
+  text-align: center;
+  font-size: 300%;
+  font-family: fantasy;
+  letter-spacing: 4px;
+  /* line-height: 3; */
+}
+
+/* <!-- about me section -->
+    <div id="about-me">
+      <img src="images/lorex.jpeg" alt="">
+      <h2>ABOUT ME</h2>
+      <p>Lorem ipsu....tae debitis cumque?</p>
+    </div> */
+#about-me {
+  text-align: center;
+  padding-top: 50px;
+}
+#about-me img {
+  height : 150px;
+}
+#about-me p {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* <!-- skills -->
+    <div id="skills">
+      <h3>My skills</h3>
+      <div class="box">
+        <h4>HTML</h4>   
+      </div>
+    </div> */
+#skills {
+  text-align: center
+}
+.box {
+  height: 200px;
+  width : 200px;
+  border : 2px solid gray;
+  background : rgb(192, 194, 192);
+  display: inline-block;
+  margin : 20px 10px;
+  border-radius: 12px;
+}
+#skills h4 {
+  border-radius: 12px 12px 0 0 ;
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  letter-spacing: 4px;
+  background: rgba(214, 139, 114,0.7)
+}
+#skills p {
+  margin : 15px 10px;
+}
