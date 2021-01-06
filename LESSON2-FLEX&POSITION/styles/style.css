@@ -1,0 +1,57 @@
+body {
+
+  /* background: red */
+}
+
+  /*<div id="main">
+      <div>
+        <h1>Michelin Star Italian Restaurant</h1>
+      </div>
+    </div> */
+
+#main-flex{
+  height: 100vh;
+  /* background: red; */
+  background-image: url('../restaurant.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+#main-flex div {
+  width: 50%;
+  color : white;
+  text-align: center;
+  background : rgba(0,0,0,0.4);
+  padding: 20px;
+}
+#main-flex h1, #main-positioning h1 {
+  margin : 5px;
+  font-size: 280%;
+  letter-spacing: 4px;
+}
+
+/* position method */
+#main-positioning{
+  height: 100vh;
+  /* background: red; */
+  background-image: url('../restaurant.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#main-positioning div {
+  width: 50%;
+  color : white;
+  text-align: center;
+  background : rgba(0,0,0,0.4);
+  padding: 20px;
+
+  position: absolute;
+  top: 50%;
+  right: 20%;
+}
