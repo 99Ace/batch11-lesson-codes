@@ -1,0 +1,225 @@
+body {
+  /* background: red */
+  margin:0;
+}
+nav {
+  display: flex;
+}
+
+/* logo and ntuc */
+nav>div {
+  height: 40px;
+  margin: 10px 20px;
+}
+nav>div>img{
+  height: 100%;
+}
+/* navbar */
+nav ul {
+  margin: 0;
+  flex : 5; 
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  color: rgba(150, 141, 141, 0.61);
+  padding: 10px 20px;
+  line-height: 3.5;
+}
+.btn {
+  padding: 15px 40px;
+  background: orange;
+  border-radius: 24px;
+  text-decoration: none;
+  color:white;
+  line-height: 3.5;
+  margin:10px;
+}
+.btn-red {
+  background: rgb(192, 38, 51)
+}
+/* hero image */
+/* 
+    <main>
+      <div class="overlay">
+        <!-- div holding the words -->
+        <div>
+          <h1>Peace of mind</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore minus in explicabo ipsa doloremque commodi provident, esse porro culpa fugiat eaque officia autem harum, consectetur quod ducimus quos velit vitae.</p>
+        </div>
+      </div>
+    </main>
+ */
+main {
+  height: 80vh;
+  background-image: url('../images/happy.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  position: relative;
+}
+.overlap:hover{
+  background: rgba(0,0,0,0.8);
+}
+.overlay>div{
+  width: 50%;
+  padding-bottom: 15px;
+  text-align: center;
+  color : white;
+  position: absolute;
+  left:50%;
+  bottom: 10%;
+  transform: translateX(-50%) 
+}
+main h1 {
+  font-size: 300%;
+}
+p {
+  font-size: 120%;
+}
+
+
+/* 
+<!-- parent feedback section -->
+<section id="parent-feedback">
+  <div>
+    <h2>FIND OUT WHAT PARENTS SAY ABOUT US</h2> #1
+    <p>Lorem ipsum ...tio.</p> #2
+    <p>Ace Ang, Father of Alexander</p> #3
+    <a href="">Read More</a> #4
+  </div>
+</section>
+ */
+
+#parent-feedback {
+  height: 60vh;
+}
+#parent-feedback>div{
+  width: 50%;
+  height: 60%;
+  /* border: 1px solid black; */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 100px 50px;
+}
+h2 {
+  font-size: 200%
+}
+#parent-feedback>div p:nth-child(2) {
+  background: rgba(213, 174, 214, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+}
+#parent-feedback>div p:nth-child(3){
+  text-align: right;
+}
+.text-purple {
+  color: rgb(120, 77, 121);
+}
+
+/*
+<section class='row'>
+  <div class="col col-left">
+    <h2>REWRITING THE RULES</h2>
+    <p>Lore..oluptas quia veniam sit atque, et assumenda tenetur dolores corrupti!x</p>
+    <a href="">Register</a><a href="">Contact Us</a>
+  </div>
+  <div class="col col-right">
+    <img src="images/fun.jpg" alt="">
+  </div>
+</section> */
+.row  {
+  display: flex;
+}
+.col-left {
+  flex: 1;
+  /* background: pink; */
+}
+.col-left div {
+  width: 50%;
+  /* background: lightblue; */
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top : 100px;
+}
+.col-left p{
+  text-align: justify;
+}
+.col-right{
+  flex: 1;
+  /* background: lightblue */
+}
+.circle {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  /* background: pink; */
+  /* margin-top : 100px;
+  margin-left: 50px;
+  margin-right: auto; */
+  margin : 100px auto 50px 50px;
+  overflow: hidden;
+}
+.circle img {
+  height: 100%;
+}
+.col {
+  flex:1;
+}
+
+/* 
+    <footer >
+      <h3>Contact Us</h3>
+      <div class="row">
+        <div class="col">Add</div>
+        <div class="col">Tel</div>
+        <div class="col">Subscribe</div>
+        <div class="col">Logo</div>
+      </div>
+    </footer>
+ */
+footer {
+  height: 200px;
+  background: rgb(76, 137, 172)
+}
+footer>div {
+  width: 80%;
+  /* border: 1px solid black; */
+  margin: 0 auto;
+  color: white;
+}
+
+/*        
+    <footer >
+      <div>
+        <h3>Contact Us</h3>
+        <div class="row">
+          <div class="col" id="address">
+            <i class="fas fa-map-marker-alt footer-icon"></i>
+            <p>229 Mountbatten Road #02-08 <br>
+                Mountbatten Square, <br>
+                Singapore 398007</p>
+          </div>
+          <div class="col">Tel</div>
+          <div class="col">Subscribe</div>
+          <div class="col">Logo</div>
+        </div>
+      </div>
+    </footer>
+
+ */
+
+#address {
+  display: flex;
+}
+.footer-icon {
+  font-size: 2.5rem;
+  line-height: 2;
+  padding: 0 10px;
+  color: rgb(56, 88, 129)
+}
